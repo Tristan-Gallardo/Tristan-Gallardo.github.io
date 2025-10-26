@@ -3651,10 +3651,6 @@ input, select, textarea {
 					width: calc(100vw + 3em);
 				}
 
-			#contact > .inner > :first-child:before {
-				display: none;
-			}
-
 		@media screen and (max-width: 980px) {
 
 			#contact > .inner {
@@ -3663,12 +3659,12 @@ input, select, textarea {
 				display: block;
 			}
 
-				#contact > .inner > * {
-					padding: 3em 0 1em 0 ;
+				#contact > .inner > *:before {
+					border-top: solid 1px rgba(212, 212, 255, 0.1);
 				}
 
 				#contact > .inner > :first-child:before {
-					display: block;
+					display: none;
 				}
 
 		}
