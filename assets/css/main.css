@@ -3374,7 +3374,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/modern-data-center-providing-cloud-services-enabling-businesses-access-computing-resources-storage-demand-internet-server-room-infrastructure-3d-render-animation.jpg");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3916,7 +3916,7 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-	/* Canva */
+/* Canva */
 
 	.canva {
 		position: relative;
@@ -3925,7 +3925,6 @@ input, select, textarea {
 		padding-top: 141.4286%;
 		padding-bottom: 0;
 		box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
-		margin-top: 1.6em;
 		margin-bottom: 0.9em;
 		overflow: hidden;
 		border-radius: 8px;
