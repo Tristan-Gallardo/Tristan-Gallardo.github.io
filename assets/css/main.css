@@ -2462,6 +2462,13 @@ input, select, textarea {
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
+			white-space: nowrap;
+		}
+
+		@media screen and (max-width: 736px) {
+			table th {
+				white-space: wrap;
+			}
 		}
 
 		table thead {
@@ -3918,12 +3925,11 @@ input, select, textarea {
 
 /* Canva */
 
-	.canva, .linkedin {
+	.canva, .linkedin, .htmlproject {
 		position: relative;
 		width: 100%;
 		padding-bottom: 0;
 		overflow: hidden;
-		border-radius: 8px;
 		will-change: transform;
 	}
 
@@ -3931,6 +3937,11 @@ input, select, textarea {
 		padding-top: 141.4286%;
 		height: 0;
 		margin-bottom: 0.9em;
+	}
+
+	.htmlproject {
+		padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+		margin: 0 0 1em 0;
 	}
 
 	.linkedin {
