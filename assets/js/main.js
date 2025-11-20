@@ -331,5 +331,15 @@
 						$menu._hide();
 
 			});
+		
+		const $imgs = $("span.image.fit");
+
+		$imgs.on("click", function () {
+			if (!document.fullscreenElement) {
+				this.requestFullscreen();
+			} else {
+				document.exitFullscreen?.();
+			}
+		});
 
 })(jQuery);

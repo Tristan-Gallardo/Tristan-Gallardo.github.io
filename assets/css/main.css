@@ -2160,6 +2160,14 @@ input, select, textarea {
 
 /* Image */
 
+	img[src$=".svg"] {
+		filter: 
+			drop-shadow(-1px -1px 0px white) 
+			drop-shadow(1px -1px 0px white) 
+			drop-shadow(1px 1px 0px white)
+			drop-shadow(-1px 1px 0px white)
+	}
+
 	.image {
 		border: 0;
 		display: inline-block;
@@ -2194,12 +2202,17 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
+			cursor: pointer;
+
+			&:fullscreen {
+				align-content: center;
+			}
 		}
 
 			.image.fit img {
 				width: 100%;
 			}
-
+		
 		.image.main {
 			display: block;
 			margin: 2.5em 0;
@@ -3901,6 +3914,10 @@ input, select, textarea {
 		background: rgba(42, 47, 74, 0.975);
 	}
 
+	body.is-menu-visible {
+		overflow: hidden;
+	}
+
 	body.is-menu-visible #wrapper {
 		-moz-filter: blur(0.5em);
 		-webkit-filter: blur(0.5em);
@@ -4074,4 +4091,3 @@ input, select, textarea {
 		padding: 0;
 		margin: 0;
 	}
-
