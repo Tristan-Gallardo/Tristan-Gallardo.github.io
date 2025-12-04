@@ -2203,6 +2203,7 @@ input, select, textarea {
 
 			&:fullscreen {
 				align-content: center;
+				object-fit: contain;
 			}
 		}
 
